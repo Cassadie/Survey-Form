@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>FCC Survey Form</title>
+        <link rel="stylesheet" href="index.css">
+        <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" 
+        rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <h1 id="title" class="text-center">Music Survey Form</h1>
+            <p id="description" class="description text-center">Thank you for taking the time to help us improve
+                the rhythm of your life.</p>
+        </header>
+
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-control"
+                placeholder="Enter Your Name" required/>
+                <br/>
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control"
+                placeholder="Enter Your Email" requried/>
+                <br/>
+                <label id="number-label" for="number">Age <span class="fine-txt"> (optional)</span></label>
+                <input type="number" name="age" id="number" min="13" max="99" class="form-control"
+                placeholder="Age"/>
+            </div>
+
+            <div class="form-group">
+                <p>Which option best describes your current primary music selection?</p>
+                <select id="dropdown" name="role" class="form-control" required>
+                    <option disabled selected value>Select Your Music Taste</option>
+                    <option value="mainstream">Mainstream</option>
+                    <option value="indie">Indie</option>
+                    <option value="old-soul">Old Soul</option>
+                    <option value="alternative">Alternative</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>How passionate are you about music?</p>
+                <label>
+                    <input name="user-passion" value="obsessed" type="radio" class="input-radio"
+                    checked/>Obsessed
+                </label>
+                <br/>
+                <label>
+                    <input name="user-passion" value="pretty-passionate" type="radio" 
+                    class="input-radio"/>Pretty Passionate
+                </label>
+                <br/>
+                <label>
+                    <input name="user-passion" value="i-like-it" type="radio" 
+                    class="input-radio"/>I Like It
+                </label>
+                <br/>
+                <label>
+                    <input name="user-passion" value="eh" type="radio" 
+                    class="input-radio"/>Eh
+                </label>
+            </div>
+
+            <div class="form-group">
+                <p>What is your music platform of choice?<span class="fine-txt"> (check all that apply)</span></p>
+                <label>
+                    <input name="platform" value="spotify" type="checkbox" class="input-checkbox"/>Spotify
+                </label>
+                <br/>
+                <label>
+                    <input name="platform" value="apple-music" type="checkbox" class="input-checkbox"/>Apple Music
+                </label>
+                <br/>
+                <label>
+                    <input name="platform" value="youtube" type="checkbox" class="input-checkbox"/>YouTube
+                </label>
+            </div>
+
+            <div class="form-group">
+                <p>Any additional notes for your curator?</p>
+                <textarea id="notes" class="input-textarea" name="comment" placeholder="Enter notes here..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="submit">Submit</button>
+            </div>
+
+        </form>
+
+    </body>
+
+</html>
